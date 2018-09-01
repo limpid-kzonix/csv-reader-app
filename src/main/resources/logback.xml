@@ -1,0 +1,12 @@
+<!--<configuration scan="true" scanPeriod="30 seconds">-->
+<configuration>
+    <appender class="ch.qos.logback.core.ConsoleAppender" name="STDOUT">
+        <encoder>
+            <pattern>%d{ISO8601,"Europe/Berlin"} %-5level [%thread] %class{0}::%method:%line - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
